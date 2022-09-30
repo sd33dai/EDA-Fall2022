@@ -75,7 +75,7 @@ summary(Neonics$Species.Common.Name)
 sort(summary(Neonics$Species.Common.Name), decreasing = TRUE)
 ```
 
-> Answer: The six most commonly studied species (excluding others 670) are honey bee 667, parasitic wasp 285， buff tailed bumblebee 183, carniolan honey bee 152, bumble bee 140, and Italian honeybee 113. They are mostly bees. Bees are of interest over other insects because they have the ability to spread neonicotinoids/or the effect of ecotoxicology while spreading pollens. They are also essential insects in reproductive of the ecosystem.
+> Answer: The six most commonly studied species (excluding others 670) are honey bee 667, parasitic wasp 285, buff tailed bumblebee 183, carniolan honey bee 152, bumble bee 140, and Italian honeybee 113. They are mostly bees. Bees are of interest over other insects because they have the ability to spread neonicotinoids/or the effect of ecotoxicology while spreading pollens. They are also essential insects in reproductive of the ecosystem.
 
 8.  Concentrations are always a numeric value. What is the class of Conc.1..Author. in the dataset, and why is it not numeric?
 
