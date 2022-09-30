@@ -133,7 +133,7 @@ unique(Litter$plotID) #12 plots were sampled at Niwot Ridge.
 summary(Litter$plotID)
 ```
 
-> Answer: 12 plots were sampled at Niwot Ridge. `summary` tells us how many samples we took in each of the 12 plots. `unique` eliminates duplicate values (plots) and shows us a list of different plots we took samples from.
+> Answer: 12 plots were sampled at Niwot Ridge. Summary tells us how many samples we took in each of the 12 plots. Unique eliminates duplicate values (plots) and shows us a list of different plots we took samples from.
 
 14. Create a bar graph of functionalGroup counts. This shows you what type of litter is collected at the Niwot Ridge sites. Notice that litter types are fairly equally distributed across the Niwot Ridge sites.
 
