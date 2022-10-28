@@ -158,7 +158,7 @@ Needles_faceted <-
   ggplot(subset(Niwot_Ridge_Litter_Processed_Data, functionalGroup = "Needles"), 
                 aes(x = collectDate, y = dryMass)) +
   geom_point()+
-  facet_wrap("nlcdClass")
+  facet_wrap(vars(nlcdClass), ncol = 3)
 print(Needles_faceted)
 
 Needles_faceted2 <-
