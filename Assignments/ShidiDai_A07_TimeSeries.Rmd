@@ -222,14 +222,14 @@ print(GaringerOzone_plot)
 
 ```{r}
 #15
-GaringerOzone.monthly_Components <- 
-  GaringerOzone.monthly_decomposed$time.series[,2:3]
+GaringerOzone.monthly_Ns <-
+  GaringerOzone.monthly.ts - GaringerOzone.monthly_decomposed$time.series[,1]
 
 #16
-GaringerOzone_trend3 <- Kendall::MannKendall(GaringerOzone.monthly_Components)
+GaringerOzone_trend3 <- Kendall::MannKendall(GaringerOzone.monthly_Ns)
 GaringerOzone_trend3
 summary(GaringerOzone_trend3)
 
 ```
 
-> Answer: The results from #16 also shows that we reject the null hypothesis (p =< 2.22e-16 < 0.05). So we reject the hypthosis which said that the trend is stationay. Thus, we conclude that there is a trend in mean Ozone concentration over month. This result matches what we got from using the Seasonal Mann Kendall.
+> Answer: The results from #16 also shows that we reject the null hypothesis (p = 0.0075402 < 0.05). So we reject the null hypthosis which said that the trend is stationay. Thus, we conclude that there is a trend in mean Ozone concentration over month. This result matches what we got from using the Seasonal Mann Kendall.
