@@ -34,6 +34,7 @@ getwd()
 library(tidyverse)
 library(sf)
 library(leaflet)
+#install.packages("mapview")
 library(mapview)
 library(RColorBrewer)
 ```
@@ -80,11 +81,11 @@ mapView(counties_sf, zcol = "AWATER")
 
 ```{r read HUCs shapefile}
 #Read the shapefile into an sf dataframe named "huc8_sf"
-
+huc8_sf <- st_read("./Data/Spatial/NCHUC8.shp")
 
 
 #View the data as a map, colored by the acreage in each
-
+mapView(huc8_sf, zcol = "ACRES")
 
 ```
 
@@ -94,11 +95,13 @@ mapView(counties_sf, zcol = "AWATER")
 
 ```{r Select the Upper Neuse HUC 8}
 #Read the shapefile into an sf dataframe
-
+upperneuse_sf <- st_read("./Data/Spatial/NCHUC8.shp") %>%
+  filter(SUBBASIN == "Upper Neuse")
 
 
 #Create a map
-
+mapView(huc8_sf, col.region= 'orange') + 
+  mapView(upperneuse_sf, col.region= 'purple', alpha.regions = 1)
 
 ```
 
