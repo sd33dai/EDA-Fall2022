@@ -41,6 +41,8 @@ library(tidyverse)
 library(lubridate)
 library(sf)
 library(leaflet)
+#Disable on-the-fly projections
+sf::sf_use_s2(FALSE)
 library(mapview)
 library(RColorBrewer)
 
